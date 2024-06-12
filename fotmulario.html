@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario</title>
+  </head>
+  <body>
+    <h2>Faça sua Reserva</h2>
+    <form>
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" placeholder="seu nome aqui" />
+      </div>
+      <br />
+      <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" placeholder="seu email" />
+      </div>
+      <br />
+      <div>
+        <label for="datadecheckin">Data de check-in: </label>
+        <input
+          type="date"
+          min="1990-01-01"
+          id="datadecheckin"
+          name="datadecheckin"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="datadecheckout">Data de check-out: </label>
+        <input
+          type="date"
+          min="1990-01-01"
+          id="datadecheckout"
+          name="datadecheckout"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="tipoquarto">Tipo de quarto: </label>
+        <select id="tipoquarto" name="tipoquarto" required>
+          <option disabled selected value="">
+            Selecione um tipo de quarto
+          </option>
+          <option>casal</option>
+          <option>solteiro</option>
+          <option>suite</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="msg">Comentarios adicionais:</label>
+        <textarea id="msg"></textarea>
+      </div>
+      <br />
+      <div>
+        <button type="submit">enviar</button>
+      </div>
+    </form>
+    <!--Enquete-->
+
+    <h2>Enquete</h2>
+    <p>
+      Tenho dois times na final do brasileirão. Quem será que vai ganhar a
+      final?
+    </p>
+    <form>
+      <div>
+        <input type="radio" id="html" name="linguagem" required />
+        <label for="saopaulo">São Paulo</label>
+
+        <input type="radio" id="css" name="linguagem" required />
+        <label for="palmeiras">Palmeiras</label>
+      </div>
+      <br />
+      <div>
+        <button type="submit">enviar</button>
+      </div>
+      <!--Pedido de comedia -->
+    </form>
+    <h2>Pedido de Comida</h2>
+    <form>
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" placeholder="seu nome aqui" />
+      </div>
+      <br />
+      <div>
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco" placeholder="Endereço" />
+      </div>
+      <br />
+      <div>
+        <label for="telefone">telefone</label>
+        <input type="text" id="telefone" placeholder="telefone" />
+      </div>
+      <br />
+      <div>
+        <label for="tipocomida">Tipo de Comida: </label>
+        <select id="tipocomida" name="tipocomida" required>
+          <option disabled selected value="">
+            Selecione um tipo de Comida
+          </option>
+          <option>coxinha</option>
+          <option>bolo</option>
+          <option>Pizza</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="msg">Observações:</label>
+        <textarea id="msg"></textarea>
+      </div>
+      <br />
+      <div>
+        <button type="submit">enviar</button>
+      </div>
+    </form>
+    <!-- Agendamento de consulta -->
+
+    <h2>Agendamento de Consulta</h2>
+    <form>
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" placeholder="seu nome aqui" />
+      </div>
+      <br />
+      <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" placeholder="seu email" />
+      </div>
+      <br />
+      <div>
+        <label for="telefone">telefone</label>
+        <input type="text" id="telefone" placeholder="telefone" />
+      </div>
+      <br />
+      <div>
+        <label for="dataconsulta">Data da Consulta: </label>
+        <input
+          type="date"
+          min="1990-01-01"
+          id="dataconsulta"
+          name="dataconsulta"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="tipoconsulta">Tipo de consulta: </label>
+        <select id="tipoconsulta" name="tipoconsulta" required>
+          <option disabled selected value="">
+            Selecione um tipo de consulta
+          </option>
+          <option>presencial</option>
+          <option>online</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="msg">Comentarios adicionais:</label>
+        <textarea id="msg"></textarea>
+      </div>
+      <br />
+      <div>
+        <button type="submit">enviar</button>
+      </div>
+    </form>
+  </body>
+</html>
